@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Parametro from "../views/Parametro.vue"
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
     path: "/cadastro",
     name: "Cadastro",
     component: () => import("../views/Cadastro.vue")
+  },
+  {
+    path: "/parametro/:dado", //:dado indica que é necessário passar o parametro chamado dado
+    name: "Parametro",
+    component: Parametro
   }
 ]
 

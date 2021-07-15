@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Bem vindo a tela de dado</h1><hr>
+        <h1>Bem vindo a tela de dado</h1><br>
         <p>O deu dado é {{parametroDaRota}}</p>
     </div>
 </template>

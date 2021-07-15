@@ -5,7 +5,9 @@
     <router-link to="/cadastro">Cadastro</router-link> |
     <router-link :to="{name: 'Parametro',params: {dado: 'Pedro Henrique'}}">Rota dinâmica</router-link>
   </div>
+  <h3>Início da Rota</h3><hr>
   <router-view/>
+  <hr><h3>Fim da Rota</h3>
 </template>
 
 <style>

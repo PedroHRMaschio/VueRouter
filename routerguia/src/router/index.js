@@ -19,7 +19,14 @@ const routes = [
   {
     path: "/cadastro",
     name: "Cadastro",
-    component: () => import("../views/Cadastro.vue")
+    component: () => import("../views/Cadastro.vue"),
+    children: [
+      {
+        path: "pessoa",
+        name: "Pessoa",
+        component: () => import("../views/About.vue")
+      }
+    ]
   },
   {
     path: "/parametro/:dado", //:dado indica que é necessário passar o parametro chamado dado
